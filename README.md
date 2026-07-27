@@ -55,8 +55,9 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
 ![cmp](img/cmp.png)
+
 comm file1 file2
- ## OUTPUT
+## OUTPUT
 ![cmm](img/cmm.png)
  
 diff file1 file2
