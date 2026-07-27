@@ -214,12 +214,12 @@ egrep 'Linux.*World' newfile
 
 egrep l{2} newfile
 ## OUTPUT
-
+![e11](img/e11.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![e12](img/e12.png)
 
 cat > file23
 ```
@@ -237,80 +237,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![s1](img/s1.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![s2](img/s2.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![s3](img/s3.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![s4](img/s4.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![s5](img/s5.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![s6](img/s6.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![s7](img/s7.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![s8](img/s8.png)
 
 
 seq 10 
 ## OUTPUT
-
+![s9](img/s9.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![s10](img/s10.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![s11](img/s11.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![s12](img/s12.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![s13](img/s13.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![s14](img/s14.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![s15](img/s15.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![s16](img/s16.png)
 
 #Sorting File content
 cat > file21
