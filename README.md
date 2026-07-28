@@ -415,7 +415,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![1](img/1.png)
 
 cat < scriptest.sh 
 ```bash
