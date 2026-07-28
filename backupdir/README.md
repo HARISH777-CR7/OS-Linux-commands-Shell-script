@@ -324,7 +324,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![q1](img/q1.png)
+
 
 cat > file22
 ```
@@ -337,14 +337,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![q2](img/q2.png)
+
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![q3](img/q3.png)
+
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -360,19 +360,19 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![q4](img/q4.png)
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![q5](img/q5.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![q6](img/q6.png)
-![q7](img/q7.png)
+
+
 mkdir backupdir
  
 mv backup.tar backupdir
@@ -381,19 +381,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![q8](img/q8.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![q9](img/q9.png)
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![q10](img/q10.png) 
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![q11](img/q11.png)
+
  
 # Shell Script
 ```
