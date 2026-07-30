@@ -138,7 +138,7 @@ cat newfile | grep -i -c "hello"
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![2](img/2.png)
 
 
 grep -w -n world newfile   
@@ -403,7 +403,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![3](img/3.png)
  
 cat << stop > herecheck.txt
 ```
@@ -453,13 +453,14 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![4](img/4.png)
  
 ls file1
 ## OUTPUT
-
+![5](img/5.png)
 echo $?
 ## OUTPUT 
+![6](img/6.png)
 ./one
 bash: ./one: Permission denied
  
@@ -470,7 +471,7 @@ abcd
  
 echo $?
  ## OUTPUT
-
+![6](img/6.png)
 
  
 # mis-using string comparisons
@@ -501,15 +502,15 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
+## OUTPUT
+![7](img/7.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![8](img/8.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -536,7 +537,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![9](img/9.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -560,7 +561,7 @@ fi
 ^d
 ```
 cat ifnested.sh 
-```
+```bash
 \#!/bin/bash
 if [ -e $HOME ]
 then
@@ -582,7 +583,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![10](img/10.png)
 
 
 # using numeric test comparisons
@@ -625,8 +626,8 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
-
+## OUTPUT
+![11](img/11.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -674,8 +675,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
-
+## OUTPUT
+![12](img/12.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -703,7 +704,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![13](img/13.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -719,7 +720,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![14](img/14.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -738,11 +739,13 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+![15](img/15.png)
 cat > whiletest
+# while command test
+!#/bin/bash
 ```bash
-#!/bin/bash
-#while command test
+
 var1=10
 while [ $var1 -gt 0 ]
 do
@@ -767,30 +770,30 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+![16](img/16.png)
  
 cat forin1.sh 
+
 ```bash
-\#!/bin/bash
-\#basic for command
+!#/bin/bash
+#basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
 do
 echo The next state is $test
 done
- ```
- 
+```
 $ chmod 755 forin1.sh
- 
+![17](img/17.png)
  
 cat forin2.sh 
 ```bash
-\#!/bin/bash
-\# another example of how not to use the for command
+#!/bin/bash
+# another example of how not to use the for command
 for test in I don't know if this'll work
 do
 echo “word:$test”
 done
- ```
+```
  
 $ chmod 755 forin2.sh
  
@@ -830,6 +833,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -861,11 +865,11 @@ for (( i=1; i <= 5; i++ ))
 do
 echo "The value of i is $i"
 done
-````
+```
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![51](img/51.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
