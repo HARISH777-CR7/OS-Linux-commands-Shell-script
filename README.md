@@ -743,9 +743,9 @@ $ ./casecheck.sh
 ![15](img/15.png)
 cat > whiletest
 # while command test
-!#/bin/bash
-```bash
 
+```bash
+#!/bin/bash
 var1=10
 while [ $var1 -gt 0 ]
 do
@@ -796,20 +796,11 @@ done
 ```
  
 $ chmod 755 forin2.sh
- 
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
- 
+
+$ ./forin2.sh
+
+![18](img/18.png)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -820,19 +811,10 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
 
 ## OUTPUT
+
+ ![19](img/19.png)
 
 cat forinfile.sh 
 ```bash
@@ -855,7 +837,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![20](img/20.png)
 
 cat forctype.sh 
 ```bash
@@ -863,7 +845,7 @@ cat forctype.sh
 # testing the C-style for loop
 for (( i=1; i <= 5; i++ ))
 do
-echo "The value of i is $i"
+	echo "The value of i is $i"
 done
 ```
 $ chmod 755 forctype.sh
@@ -882,7 +864,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![25](img/25.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -900,7 +882,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![26](img/26.png)
  
 cat forbreak.sh 
 ```bash
@@ -916,26 +898,12 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-continue
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
+## OUTPUT
+![27](img/27.png)
 
  
 $ chmod 755 forcontinue.sh
@@ -956,7 +924,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![28](img/28.png)
 
  cat exread1.sh
 ```bash
@@ -969,7 +937,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
-
+![29](img/29.png)
 
 $ ./exread1.sh 
  
@@ -990,10 +958,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![30](img/30.png)
  
  ./funcex.sh 1 2
-
+![31](img/31.png)
  
 cat argshift.sh
 ```bash
@@ -1007,7 +975,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![32](img/32.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1024,7 +992,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![33](img/33.png)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1037,7 +1005,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![34](img/34.png)
  
 cat > nc.awk
 ```bash
@@ -1068,7 +1036,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![35](img/35.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1095,7 +1063,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![36](img/36.png)
 
 # RESULT:
 The Commands are executed successfully.
